@@ -1,11 +1,10 @@
 
 export const List = ({pokemons} : any) => {
   return (
-    <div>
-      <h3>This is the List</h3>
+    <div className="pokemon-grid">
       {pokemons.map((pokemon, index) => (
         <div key={index}>
-          <span>{pokemon}</span>
+          <span className="pokemon-item">{pokemon}</span>
         </div>
       ))}
     </div>

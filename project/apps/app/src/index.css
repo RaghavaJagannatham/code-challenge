@@ -1,0 +1,21 @@
+.pokemon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    padding: 10px;
+}
+  
+.pokemon-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+  
+.pokemon-item div {
+    flex: 1;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
