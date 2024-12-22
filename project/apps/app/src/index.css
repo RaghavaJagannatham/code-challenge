@@ -1,21 +1,40 @@
 .pokemon-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
     padding: 10px;
 }
-  
+
 .pokemon-item {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; 
     padding: 10px;
-    width: 100%;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 100%; 
 }
-  
 .pokemon-item div {
-    flex: 1;
+    flex: 1; 
     padding: 5px;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
 }
+.pokemon-item button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 80%; 
+    max-width: 80px;
+}
+
+.pokemon-item button:hover {
+    background-color: #e60000;
+}
+  
